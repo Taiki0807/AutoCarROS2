@@ -1,7 +1,6 @@
 # AUTONOMOUS VEHICLE: CONTROL AND BEHAVIOUR
 
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/winstxnhdw/AutoCarROS2.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/winstxnhdw/AutoCarROS2/alerts/)
-[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/winstxnhdw/AutoCarROS2.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/winstxnhdw/AutoCarROS2/context:python)
+### Based on this project [(link)](https://github.com/winstxnhdw/KinematicBicycleModel)
 
 <p align="center"><b>AutoCarROS has migrated to ROS 2 Foxy Fitzroy</b></p>
 
@@ -12,6 +11,7 @@
 ## Abstract
 
 This project contains the ROS 2 variant of the [AutoCarROS](https://github.com/winstxnhdw/AutoCarROS) repository. It is a template for the development of a robust non-holonomic autonomous vehicle platform in a simulated environment using ROS 2 and Gazebo 11.
+
 > The following GIF demonstrates a simulation built on top of AutoCarROS 2.
 
 <div align="center">
@@ -32,12 +32,6 @@ Clone the repository.
 ```bash
 $ git clone https://github.com/winstxnhdw/AutoCarROS2.git
 $ cd PATH/TO/WORKSPACE/src/AutoCarROS2
-```
-
-Install ROS 2 **and** the required dependencies.
-
-```bash
-sh ros-foxy-desktop-full-install.sh
 ```
 
 If you only need to install the required dependencies, run the following. Otherwise, skip this step.
@@ -86,21 +80,21 @@ $ ros2 launch launches click_launch.py
 
 ## Launch Files
 
-|Launch File|Purpose|
-|-----------|-------|
-|`default_launch.py`|Complete pipeline with preset waypoints|
-|`click_launch.py`|Interactive pipeline for testing and fun|
+| Launch File         | Purpose                                  |
+| ------------------- | ---------------------------------------- |
+| `default_launch.py` | Complete pipeline with preset waypoints  |
+| `click_launch.py`   | Interactive pipeline for testing and fun |
 
 ## Packages
 
-|Package|Purpose|
-|-----------|-------|
-|`launches`|Contains the main launch files for quick launching|
-|`ngeeann_av_description`|Contains the model's URDF and RViz configuration files|
-|`ngeeann_av_gazebo`|Contains the world files and model's SDF|
-|`ngeeann_av_map`|Contains the Bayesian Occupancy Filter stack|
-|`ngeeann_av_msgs`|Contains all custom messages used throughout every package|
-|`ngeeann_av_nav`|Contains the navigation stack|
+| Package                  | Purpose                                                    |
+| ------------------------ | ---------------------------------------------------------- |
+| `launches`               | Contains the main launch files for quick launching         |
+| `ngeeann_av_description` | Contains the model's URDF and RViz configuration files     |
+| `ngeeann_av_gazebo`      | Contains the world files and model's SDF                   |
+| `ngeeann_av_map`         | Contains the Bayesian Occupancy Filter stack               |
+| `ngeeann_av_msgs`        | Contains all custom messages used throughout every package |
+| `ngeeann_av_nav`         | Contains the navigation stack                              |
 
 ## Troubleshoot
 
